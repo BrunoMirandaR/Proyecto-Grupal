@@ -1,11 +1,11 @@
 #menu.py
 import sys
 import Funciones_del_menu as lb
-#solo_funciona_carta
+
 x = 0
+print("------------- Hola, Bienvenido a MIRANDAS -------------")
 while x != 4:
-    x = int(input(""""------------- Hola, Bienvenido a MIRANDAS -------------
-    Escriba el numero de la opcione que desea usar: 
+    x = int(input("""Escriba el numero de la opcione que desea usar: 
     1) Ver carta
     2) Comprar
     3) Miembros VIP
