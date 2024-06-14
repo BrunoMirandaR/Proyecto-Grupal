@@ -1,7 +1,7 @@
 #menu.py
 import sys
 import Funciones_del_menu as lb
-
+#solo_funciona_carta
 x = 0
 print("------------- Hola, Bienvenido a MIRANDAS -------------")
 while x != 4:
