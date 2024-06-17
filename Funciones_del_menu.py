@@ -1,4 +1,5 @@
 #Beta del menu
+import sys
 def carta():
     print("""--------------------- Carta ---------------------
     1. Completo Italiano $3000
@@ -80,6 +81,27 @@ def ventas ():
             print("Pedido no valido")
         continue
 
+def menu():
+    x = 0
+    print("------------- Hola, Bienvenido a MIRANDAS -------------")
+    while x != 4:
+        x = int(input("""Escriba el numero de la opcione que desea usar: 
+        1) Ver carta
+        2) Comprar
+        3) Miembros VIP
+        4) Salir
+        """))
+        if x == 1:
+            carta()
+        elif x == 2:
+            ventas()
+        elif x == 3:
+            sesion()
+        elif x == 4:
+            sys.exit()
+        else:
+            print("Opcion no valida, intentelo de nuevo")
+
 global rut
 def sesion():
     intento = 4
@@ -113,7 +135,8 @@ def sesion():
         Rut: {rut_cambiado}
         Contraseña: {contraseña}
             """)
-  
+    menu()
+    
     
 
 
