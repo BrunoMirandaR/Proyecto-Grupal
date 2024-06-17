@@ -14,9 +14,9 @@ while x != 4:
     if x == 1:
         lb.carta()
     elif x == 2:
-        lb.comprar()
+        lb.ventas()
     elif x == 3:
-        lb.miembros()
+        lb.sesion()
     elif x == 4:
         sys.exit()
     else:
