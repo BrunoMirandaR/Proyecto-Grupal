@@ -31,11 +31,10 @@ def carta():
     ------------------------------------------------------------------------------------""")
 
 def ventas ():
+    total = 0
     while True:
         try:
-            total = 0
-            while True:
-                try:
+            try:
                     pedido = int(input("Ingrese el numero de su pedido: "))
                     if pedido == 1:
                         total += 3000
@@ -59,14 +58,13 @@ def ventas ():
                         total += 2000
                     else:
                         print("Pedido no valido")
-                    continue
                     while True:
                         try:
                             continuar = input("Desea seguir pidiendo? (si/no): ")
                             if continuar == "si":
                                 break
                             elif continuar == "no":
-                                print("Total a pagar: $", total)
+                                print("Total a pagar: $", total * 1.19)
                                 exit()
                             else:
                                 print("Respuesta no valida")
@@ -74,9 +72,8 @@ def ventas ():
                         except ValueError:
                             print("Respuesta no valida")
                         continue
-                except ValueError:
+            except ValueError:
                     print("Pedido no valido")
-                continue
         except ValueError:
             print("Pedido no valido")
         continue
@@ -138,5 +135,3 @@ def sesion():
     menu()
     
     
-
-
