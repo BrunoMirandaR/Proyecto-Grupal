@@ -165,12 +165,6 @@ def sesion():
     rut_cambiado = str(rut)[:-1] + "-" + str(rut)[-1]
 
 
-    #ESTO NO ESTARÁ EN AL PROYECTO FINAL, SOLO ES PARA COMPROBAR
-    print("Muy bien hecho pe causa")
-    print(f""" ===SUS DATOS===
-        Rut: {rut_cambiado}
-        Contraseña: {contraseña}
-            """)
     
     
 
