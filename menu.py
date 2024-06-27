@@ -20,6 +20,7 @@ while x != 4:
     elif x == 3:
         lb.vip()
     elif x == 4:
+        print("Gracias por preferirnos, hasta luego")
         sys.exit()
     else:
         print("Opcion no valida, intentelo de nuevo")
